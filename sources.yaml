@@ -1,0 +1,26 @@
+# Danh sách URL vendor chính thống để nạp làm nguồn trích dẫn
+urls:
+# Danh sách URL vendor chính thống để nạp làm nguồn trích dẫn (SDN302 - NodeJS, Express, MongoDB)
+urls:
+  - https://nodejs.org/docs/latest/api                     # Node.js API docs
+  - https://expressjs.com/                                 # Express framework docs
+  - https://expressjs.com/en/starter/generator.html        # Express Generator (starter)
+  - https://www.mongodb.com/docs/                          # MongoDB official docs
+  - https://www.mongodb.com/cloud/atlas                    # MongoDB Atlas (cloud)
+  - https://mongoosejs.com/docs/                           # Mongoose (ODM) docs
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP      # MDN Web Docs - HTTP (overview & guides)
+  - https://restfulapi.net/                                # REST API design best practices (guideline)
+  - https://ejs.co/                                        # EJS templating docs
+  - https://handlebarsjs.com/                              # Handlebars templating
+  - https://www.passportjs.org/                            # Passport.js (authentication)
+  - https://github.com/expressjs/multer                    # Multer (file upload middleware)
+  - https://helmetjs.github.io/                            # Helmet (security headers)
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS # CORS (MDN guide)
+  - https://jwt.io/                                        # JWT overview / tools
+  - https://www.npmjs.com/package/bcrypt                   # bcrypt (password hashing) npm page
+  - https://www.postman.com/                               # Postman (API testing)
+  - https://devcenter.heroku.com/                          # Heroku deployment docs
+  - https://pm2.keymetrics.io/                             # PM2 (process manager)
+  - https://docs.nestjs.com/                               # NestJS docs (if covering frameworks)
+  - https://hono.dev/                                      # Hono framework docs (if used)
+  - https://www.mongodb.com/products/tools/compass         # MongoDB Compass (GUI)
