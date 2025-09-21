@@ -124,7 +124,7 @@ if use_vendor_docs:
     with col1:
         if st.button("🔄 Sync nguồn vendor"):
             st.cache_data.clear()  # làm mới cache vendor docs
-            st.experimental_rerun()
+            st.rerun()
     with col2:
         st.caption("Sửa URLs trong sources.yaml nếu muốn bổ sung/giảm bớt nguồn.")
     with st.spinner("Đang tải nguồn vendor..."):
