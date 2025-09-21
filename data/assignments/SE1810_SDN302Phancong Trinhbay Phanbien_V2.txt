@@ -1,0 +1,135 @@
+	Class:SE1810																	
+	Course:SDN302	FA25																
+	Group:6	Students:31																
+																		
+STT	Content	Date	Slot	Presenting group 	Reviewing group	Total time	Presentation time>	Reviewing time>	Q&A time>	Lecture Resume	Grade/Vote	Book/Reference						
+1	"Course Introduction:
+1.1 Full Stack Web Development: The Big Picture
+1.2 NodeJS Introduction
+2.1 Features of node.js
+- Single Threaded but Highly Scalable
+- Event-driven and Asynchronous
+- Event Loop
+3.1 Node.js - Environment setup
+- Setting up node.js and npm
+- Basics of node.js and npm
+3.2 Node.js - First application"	Monday 08/09/2025	1	1	2	135	80	10	20	10	15	"Read Book, slide: Slot1.1_What-is-Back-End-Development
+Slot1.1_What-is-Back-End-Development
+Slot1.2_NodeJS"						
+2	"API:
+4.1 What is API
+4.2 How do APIs work?
+4.3 What does an api do?
+HTTP:
+5.1 HTTP Overview
+5.2 Receiving an HTTP Request with Express
+NodeJS and HTTP:
+6.1 Node.JS HTTP Module
+6.2 Node.JS as a web server"	Wednesday 10/09/2025	2	2	1	135	80	10	20	10	15	"Slot2.1_API
+Slot2.2_Node&Http
+ "						
+3	"EXPRESSJS:
+7.1 Express Introduction
+7.2 Using Express js to create your first program
+NODE and EXPRESS:
+8.1 Restful routing with express
+8.2 Understand and use middleware for node applications
+8.3 Types of middleware in node.js
+8.4 Writing express middleware
+8.5 Express- Generator
+- Express Generator Introduction
+- Using Express - Generator To Create Your First Program
+Nosql Databases With Mongodb:
+9.1 Nosql Introduction
+9.2 Document Databases (Mongodb)
+9.3 Create-Read-Update-Destroy (Crud)"	Monday 15/09/2025	3	3	4	135	80	10	20	10	15	"
+Slot3.1_ExpressJS
+Slot3.2_NoSQL-Database-With-MongoDB"						
+4	"10.1 Nosql Best Practices
+10.2 Mongodb Mongo Shell Features
+10.3 NodeJs and MongoDB
+Mongoose:
+11 What is Mongoose
+Mongoose Population
+12 Use Mongoose population to cross-reference users within a comment"	Wednesday 17/09/2025	4	4	5	135	80	10	20	10	15	"Slot3.3_NodeJS-with-MongoDB
+Slot4.1_Mongoose
+"						
+5	"13 Populate the comments with the users’ information upon querying
+14 Match with mongodb regex
+REST API with Express, MongoDB and Mongoose:
+15 Develop a full-fledged REST API server with Express, MongoDB and Mongoose"	Monday 22/09/2025	5	5	6	75	40	10	10	5	10	"Slot5.1_Mongoose Population
+
+Slot6_RestfulApi-with-Express-mongodb-and-mongoose"						
+6	"16 Implement the end-to-end solution integrating Express, Node and MongoDB
+17 Model - View - Controller
+ASSIGNMENT 1"	Wednesday 24/09/2025	6	6	1	135	80	10	20	10	15	"
+Slot6_RestfulApi-with-Express-mongodb-and-mongoose"						
+7	"Embedded Javascript (EJS):
+19 What is EJS?
+20 Understand what EJS does and how to use it with node and express
+21 Templating with EJS"	Monday 29/09/2025	7	1	2	135	80	10	20	10	15	"Slot7_EJS(EmbbedJavascript)
+"						
+8	"HandleBars:
+22.1 What Is Handlebars?
+22.2 Understand What Handlebars Does And How To Use It With Node And Express
+23.3 Templating With Handlebars
+Progress Test - 1
+ASSIGNMENT 2"	Wednesday 01/10/2025	8	2	3	135	80	10	20	10	15	Slot8_HandleBars						
+9	"Authentication And Security:
+25 Authentication And Keeping User Details Secure
+- Password authentication
+- Multi-factor authentication
+- Biometric authentication
+26.1 Encryption And Useencryption To Keep Your Database Secure
+- Database Encryption
+26.2 Hashing Passwords With Bcrypt
+27 Sessions And Cookies"	Monday 06/10/2025	9	3	4	135	80	10	20	10	15	Slot9-10_Authentication_and_Security						
+10	"Authentication And Security (Cont'd)
+28 User Authentication With Passport
+- Use Passport Module Together With Passport-Local
+29.1 use passport-local-mongoose for setting up local authentication within server 29.2 use passport together with sessions to set up user authentication
+30 Token Based Authentication"	Wednesday 08/10/2025	10	4	5	135	80	10	20	10	15	Slot9-10_Authentication_and_Security						
+11	"HTTPS and Secure Communication:
+31 Configure a secure server in Node using the core HTTPS module
+32.1 Generate the private key and public certificate and configure the HTTPS server
+32.2 Redirect traffic from the insecure HTTP server to a secure HTTPS server
+Uploading Files:
+33 Configure the Multer module to enable file uploading"	Monday 13/10/2025	11	5	6	135	80	10	20	10	15	"Slot11_HTTPS_Secure-communication
+Slot12_Upload-Download-Files"						
+12	"34 Setup Express server to use Multer to upload files to a designated folder
+Download Files:
+35 Configure the module to enable file downloading
+36 Setup Express server to use Multer to download files to a designated folder"	Wednesday 15/10/2025	12	6	2	135	80	10	20	10	15	"
+Slot12_Upload-Download-Files"					1	3
+13	"Cross-Origin Resource Sharing:
+37 Use the CORS NPM module to enable CORS support
+38 Enable Express application to support CORS requests by configuring the CORS module
+OAuth and User Authentication:
+39 Use an OAuth providers for authenticating users within server
+40 Setup server using Passport OAuth modules
+Progress Test - 2
+ASSIGNMENT 3"	Monday 20/10/2025	13	1	3	135	80	10	20	10	15	Slot13_Cors					2	4
+14	"Backend as a Service (BaaS):
+43 Introduction
+44 Hosting static websites with GitHub Pages
+45 Understand and use to quickly build backend support for applications"	Wednesday 22/10/2025	14	2	4	135	80	10	20	10	15	Slot15-16_Backend-as-a-Service-(BaaS)					3	5
+15	"Deployment:
+46 Web hosting
+47 Website Deployment
+48 Deploying Server-Based Applications with Heroku"	Monday 27/10/2025	15	3	5	135	80	10	20	10	15	Slot15-16_Backend-as-a-Service-(BaaS)					4	1
+16	Mock PE	Wednesday 29/10/2025	16														5	2
+17	"Frameworks: NestJS:
+49 Introduction
+50 Installing
+51 Using Nestjs To Create Your First Program"	Monday 03/11/2025	17	4	6	135	80	10	20	10	15	Slot17-18-19_Frameworks-NestJS-Hono						
+18	"52 Overview Techniques
+53 Overview Techniques
+54 Overview Security"	Wednesday 05/11/2025	18	5	1	135	80	10	20	10	15	Slot17-18-19_Frameworks-NestJS-Hono						
+19	"Framework Hono:
+55 Introduction and Installing
+56 Using Hono To Create Your First Program
+ASSIGNMENT 4
+Progress Test - 3"	Monday 10/11/2025	19	6	2	135	80	10	20	10	15	Slot17-18-19_Frameworks-NestJS-Hono						
+20	"Project Presentation
+Project Presentation
+"	Wednesday 12/11/2025	20															
