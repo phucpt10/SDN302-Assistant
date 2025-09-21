@@ -1,0 +1,79 @@
+# NodeJS Fundamentals - Chapter 1
+
+## Introduction to NodeJS
+
+NodeJS is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript on the server side, enabling full-stack JavaScript development.
+
+### Key Features of NodeJS
+
+1. **Event-Driven Architecture**: NodeJS uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+
+2. **Single-Threaded**: NodeJS runs on a single thread with an event loop, but it can handle concurrent operations through callbacks and promises.
+
+3. **NPM (Node Package Manager)**: The largest ecosystem of open source libraries in the world.
+
+4. **Cross-Platform**: NodeJS applications can run on Windows, Linux, Unix, Mac OS X, etc.
+
+### The Event Loop
+
+The event loop is the heart of NodeJS. It enables NodeJS to perform non-blocking I/O operations despite JavaScript being single-threaded.
+
+```javascript
+console.log('Start');
+
+setTimeout(() => {
+    console.log('Timeout callback');
+}, 0);
+
+console.log('End');
+
+// Output:
+// Start
+// End
+// Timeout callback
+```
+
+### Modules in NodeJS
+
+NodeJS uses the CommonJS module system. You can create and use modules using `module.exports` and `require()`.
+
+```javascript
+// math.js
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+
+module.exports = { add, subtract };
+
+// app.js
+const { add, subtract } = require('./math');
+
+console.log(add(5, 3)); // 8
+console.log(subtract(5, 3)); // 2
+```
+
+### Core Modules
+
+NodeJS comes with many built-in modules:
+
+- **fs**: File system operations
+- **http**: HTTP server and client functionality
+- **path**: Utilities for working with file and directory paths
+- **url**: URL resolution and parsing
+- **crypto**: Cryptographic functionality
+
+### Creating a Simple HTTP Server
+
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello World!\n');
+});
+
+server.listen(3000, () => {
+    console.log('Server running at http://localhost:3000/');
+});
+```
+
+This is a fundamental concept in the SDN302 course that students must understand.

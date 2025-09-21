@@ -1,0 +1,166 @@
+# Lab Assignment 1: Building Your First Express.js Application
+
+## Objective
+Learn to create a basic web server using Express.js framework and understand middleware concepts.
+
+## Prerequisites
+- Basic understanding of JavaScript
+- NodeJS installed on your system
+- Knowledge of npm package manager
+
+## Instructions
+
+### Step 1: Project Setup
+1. Create a new directory for your project:
+   ```bash
+   mkdir express-lab1
+   cd express-lab1
+   ```
+
+2. Initialize a new npm project:
+   ```bash
+   npm init -y
+   ```
+
+3. Install Express.js:
+   ```bash
+   npm install express
+   ```
+
+### Step 2: Create Basic Server
+Create a file named `app.js` with the following content:
+
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Basic route
+app.get('/', (req, res) => {
+    res.send('Hello Express!');
+});
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
+```
+
+### Step 3: Add More Routes
+Add the following routes to your application:
+
+```javascript
+// About page
+app.get('/about', (req, res) => {
+    res.send('About Page');
+});
+
+// Contact page
+app.get('/contact', (req, res) => {
+    res.json({
+        name: 'SDN302 Course',
+        email: 'sdn302@example.com',
+        phone: '+1234567890'
+    });
+});
+
+// User profile with parameters
+app.get('/user/:id', (req, res) => {
+    const userId = req.params.id;
+    res.json({
+        userId: userId,
+        message: `Profile page for user ${userId}`
+    });
+});
+```
+
+### Step 4: Add Middleware
+Learn about middleware by adding logging functionality:
+
+```javascript
+// Logging middleware
+app.use((req, res, next) => {
+    console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
+    next();
+});
+
+// JSON parsing middleware
+app.use(express.json());
+```
+
+### Step 5: Handle POST Requests
+Add a POST route to handle form submissions:
+
+```javascript
+app.post('/submit', (req, res) => {
+    const { name, email } = req.body;
+    
+    if (!name || !email) {
+        return res.status(400).json({
+            error: 'Name and email are required'
+        });
+    }
+    
+    res.json({
+        message: 'Form submitted successfully',
+        data: { name, email }
+    });
+});
+```
+
+### Step 6: Error Handling
+Add error handling middleware:
+
+```javascript
+// 404 handler
+app.use((req, res) => {
+    res.status(404).json({
+        error: 'Page not found'
+    });
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({
+        error: 'Something went wrong!'
+    });
+});
+```
+
+## Testing Your Application
+
+1. Run your application:
+   ```bash
+   node app.js
+   ```
+
+2. Test the following endpoints:
+   - GET http://localhost:3000/
+   - GET http://localhost:3000/about
+   - GET http://localhost:3000/contact
+   - GET http://localhost:3000/user/123
+   - POST http://localhost:3000/submit (with JSON body)
+
+## Expected Deliverables
+
+1. Complete `app.js` file with all required routes
+2. Test results showing all endpoints working correctly
+3. Screenshots of the application running in browser/Postman
+
+## Grading Criteria
+
+- Basic server setup (20%)
+- Route implementation (30%)
+- Middleware usage (25%)
+- Error handling (15%)
+- Code quality and documentation (10%)
+
+## Additional Challenges (Optional)
+
+1. Add static file serving for CSS/JS files
+2. Implement query parameter handling
+3. Add input validation using express-validator
+4. Create a simple HTML form to test POST requests
+
+This lab assignment covers essential Express.js concepts that form the foundation of web development with NodeJS.
